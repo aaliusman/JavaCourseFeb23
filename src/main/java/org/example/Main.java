@@ -6,7 +6,7 @@ public class Main {
 
         // Whenever we have a variable, we need to start with datatype, then variable name then assign value to it
         String name = "Usman";
-        String address = "My name is Usman, and i Live at #$#$ 99 hollybrooke";
+        String address = "My name is Usman, and i Live at #$#$ hollybrooke";
         System.out.println(name);
 
         /* We have two different types of data type ( Primitive, Non-Primitive)
