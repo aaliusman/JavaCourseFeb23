@@ -82,6 +82,7 @@ public class Main {
 
         int kl = 34 - hj;
         System.out.println(kl);
+        System.out.println("hello");
 
 
     }
