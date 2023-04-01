@@ -143,13 +143,13 @@ public class Main {
         System.out.println(newInt);
 
         //Different type of operators in java +, -, *, /,%, ++, --
-        System.out.println(3+5);
-        System.out.println(5-2);
-        System.out.println(5*3);
-        System.out.println(10/2);
-        System.out.println(10%4);
-        System.out.println(19%4);
-        System.out.println(15%5);
+        System.out.println(3 + 5);
+        System.out.println(5 - 2);
+        System.out.println(5 * 3);
+        System.out.println(10 / 2);
+        System.out.println(10 % 4);
+        System.out.println(19 % 4);
+        System.out.println(15 % 5);
 
         // ++
         int i = 2;
@@ -164,9 +164,9 @@ public class Main {
         //+=2
         int x = 2;
         // x = x + 2
-        x+=2;
-        x+=2;
-        x+=2;
+        x += 2;
+        x += 2;
+        x += 2;
         System.out.println(x);
 
         // --
@@ -178,8 +178,8 @@ public class Main {
 
         int c = 5;
         // c = c - 2
-        c-=2;
-        c-=2;
+        c -= 2;
+        c -= 2;
         System.out.println(c);
 
         boolean checkVal = 5 > 7;
@@ -189,14 +189,14 @@ public class Main {
         // Java conditions and If Else statement
         if (true) {
             System.out.println("Print false");
-        } else  {
+        } else {
             System.out.println("Print true");
         }
 
 
         if (false) {
             System.out.println("Print false");
-        } else  {
+        } else {
             System.out.println("Print true");
         }
 
@@ -209,7 +209,7 @@ public class Main {
         int nummm = 9;
         if (nummm > 10) {
             System.out.println("numm is > 10");
-        } else  {
+        } else {
             System.out.println("num is < 10");
         }
 
@@ -217,7 +217,7 @@ public class Main {
         String pio = "Ali";
         if (iopp == pio) {
             System.out.println("Strings match");
-        } else  {
+        } else {
             System.out.println("Strings do not match");
         }
 
@@ -226,31 +226,181 @@ public class Main {
 
         if (klp == lkp) {
             System.out.println("Both integer equals to each other");
-        } else  {
+        } else {
             System.out.println("Not equals");
         }
 
         // <= less than or equal will return true
         if (34 <= 35) {
             System.out.println("Print line 235");
-        } else  {
+        } else {
             System.out.println("Print line 237");
         }
 
         // >= greater than or equal will return true
         if (34 >= 35) {
             System.out.println("Print line 242");
-        } else  {
+        } else {
             System.out.println("Print line 244");
         }
 
         // != represent not equal, in any programing language ! sign mean not
-        if ( 24 != 34) {
+        if (24 != 34) {
             System.out.println("Print line 249");
-        } else  {
+        } else {
             System.out.println("Print line 251");
         }
 
+        //if else if
+        String fruit = "apple";
 
+        if (fruit.equals("Orange")) {
+            System.out.println("This Orange");
+        } else if (fruit.equals("Mango")) {
+            System.out.println("This is Mango");
+        } else if (fruit.equals("apple")) {
+            System.out.println("This is apple");
+        } else {
+            System.out.println("Can't find fruit");
+        }
+
+        int month = 3;
+        if (month == 1) {
+            System.out.println("January");
+        } else if (month == 2) {
+            System.out.println("February");
+        } else if (month == 3) {
+            System.out.println("March");
+        } else {
+            System.out.println("Can't find Month");
+        }
+
+        //if ( 24 != 34) {
+        //            System.out.println("Print line 249");
+        //        } else  {
+        //            System.out.println("Print line 251");
+        //        }
+        String checkNumbers = (24 == 34) ? "integers are equal" : "integers are not equal";
+        System.out.println(checkNumbers);
+
+        int mon = 9;
+        String months = (mon == 8) ? "Month is Sep" : "Don't know what month is it";
+        System.out.println(months);
+
+        // Switch statement
+        int day = 2;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tue");
+                break;
+            case 3:
+                System.out.println("Wed");
+                break;
+            case 4:
+                System.out.println("Thurs");
+                break;
+            case 5:
+                System.out.println("Fri");
+                break;
+            case 6:
+                System.out.println("Sat");
+                break;
+            case 7:
+                System.out.println("Sun");
+                break;
+        }
+
+        //print a number 1 to 10
+        // while loop, do while loop and for loop
+        System.out.println(1);
+        System.out.println(2);
+        System.out.println(3);
+        System.out.println(4);
+        System.out.println(5);
+        System.out.println(6);
+        System.out.println(7);
+        System.out.println(8);
+        System.out.println(9);
+        System.out.println(10);
+
+        //the while loop loops through a block of code as long as a specified condition is true:
+        int pp = 2;
+        while (pp <= 6) {
+            System.out.println(pp);
+            pp++;
+        }
+        int tt = 3;
+        while (tt == 6) {
+            System.out.println(tt);
+            tt++;
+        }
+        int card = 200;
+        while (card == 300) {
+            // i will click on bonus offer
+            // i will go next page
+            // i will validate if text is $200 online cash rewards bonus after making at least $1,000 in
+        }
+
+        // Do/While Loop
+//        The do/while loop is a variant of the while loop. This loop will execute the code block once,
+//        before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+        int bonus = 1;
+        do {
+            System.out.println(bonus);
+            bonus++;
+        } while (bonus == 3);
+
+        int us = 4;
+        do {
+            System.out.println(us);
+            us += 2;
+        } while (us == 8);
+
+        // for loop
+        for (int z = 0; z < 10; z++) {
+            System.out.println(z);
+        }
+
+        for (int z = 4; z <= 5; z++) {
+            System.out.println(z);
+            //z++
+        }
+
+        //Arrays are used to store multiple values in a single variable,
+        // instead of declaring separate variables for each value.
+        // After creation, its length is fixed.
+
+        //arrays index start with 0
+        // length starts with 1
+        String[] cars = {"BMV", "Nissan", "Tesla", "Ford", "Escalade", "Honda", "Chevy"};
+        int carsLength = cars.length;
+        System.out.println(carsLength);
+        System.out.println(cars[2]);
+
+        int[] myNumbers = {2, 4, 6, 8, 10};
+        System.out.println(myNumbers.length);
+        System.out.println(myNumbers[3]);
+
+        for (int v = 0; v < cars.length; v++) {
+            System.out.println(cars[v]);
+        }
+
+        System.out.println("***********");
+
+        // revers your arrays
+        // g =4;
+        for (int g = cars.length - 1; g >= 0; g--) {
+                System.out.println(cars[g]);
+        }
+
+        // if you want to print specific car
+        for (int g = cars.length - 1; g >= 0; g--) {
+            if (cars[g].equals("Tesla")) {
+                System.out.println(cars[g]);
+            }
+        }
     }
 }
