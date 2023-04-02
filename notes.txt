@@ -1,0 +1,6 @@
+
+Java OOP -OOP stands for Object-Oriented Programming
+
+Inheritance.Inheritance lets programmers create new classes that share
+some of the attributes of existing classes.
+Using Inheritance lets us build on previous work without reinventing the wheel.

@@ -1,8 +1,20 @@
 package org.example;
 
-public class Main {
-    public static void main(String[] args) {
+import demoClass.JavaClass;
+import demoClass.PracticeClass;
+import demoClass.TestClass;
 
+public class Main {
+
+    String adsfa = "Hello";
+    int jh = 23;
+
+
+
+
+
+    public static void main(String[] args) {
+        System.out.println();
 
         // Whenever we have a variable, we need to start with datatype, then variable name then assign value to it
         // dataType variableName = value;
@@ -320,15 +332,11 @@ public class Main {
         System.out.println(3);
         System.out.println(4);
         System.out.println(5);
-        System.out.println(6);
-        System.out.println(7);
-        System.out.println(8);
-        System.out.println(9);
-        System.out.println(10);
+        System.out.println("~~~~~~~~~~~~~~~");
 
         //the while loop loops through a block of code as long as a specified condition is true:
-        int pp = 2;
-        while (pp <= 6) {
+        int pp = 1;
+        while (pp <= 5) {
             System.out.println(pp);
             pp++;
         }
@@ -402,5 +410,61 @@ public class Main {
                 System.out.println(cars[g]);
             }
         }
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~");
+        // String built in methods
+        String txt = " I LOVE CODING ";
+        System.out.println(txt.length());
+        System.out.println(txt.toLowerCase().equals("i love coding"));
+        System.out.println(txt.charAt(5));
+        System.out.println(txt.length());
+        // trim gets rid of extra spaces in the string before and after
+        System.out.println(txt.trim().length());
+        System.out.println(txt.toUpperCase());
+        System.out.println(txt.contains("LOVE  "));
+        // split example (we need to use \\$, \\., \\+) rest should work fine
+        String boa = " Continue to BankofAmerica/com ";
+        String [] split_boa = boa.split("/");
+        System.out.println(split_boa[0]);
+        System.out.println(split_boa[1]);
+        if (split_boa[0].trim().equals("Continue to BankofAmerica")) {
+            System.out.println("Test Passed");
+        } else  {
+            System.out.println("Test failed");
+        }
+
+
+        //Class example
+        //Home home = new Home()
+        JavaClass javaClass = new JavaClass();
+        System.out.println(javaClass.cars[4]);
+
+        System.out.println(javaClass.name);
+        System.out.println(javaClass.myNumber);
+
+
+        System.out.println(PracticeClass.multiplication);
+
+
+        TestClass testClass = new TestClass();
+        testClass.totalPayment();
+        testClass.getMessage();
+
+        testClass.getCodingMessage();
+        System.out.println(testClass.getCodingMessage());
+        System.out.println(testClass.totalMortgagePayment());
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
