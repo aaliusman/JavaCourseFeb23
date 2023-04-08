@@ -2,21 +2,31 @@ package org.example;
 
 import demoClass.JavaClass;
 import demoClass.PracticeClass;
-import demoClass.TestClass;
+import demoClass.MethodClassExample;
 
-public class Main {
+public class Main extends MethodClassExample{
 
-    String adsfa = "Hello";
+
+    public static void printMyCity() {
+        String city = "langhorne";
+        System.out.println(city);
+    }
+
+    static void hello() {
+        System.out.println("hello world");
+    }
+
+
+    public static String adsfa = "Hello";
     int jh = 23;
 
-
-
-
-
     public static void main(String[] args) {
+
+        hello();
+
         System.out.println();
 
-        // Whenever we have a variable, we need to start with datatype, then variable name then assign value to it
+        // Whenever we have a variable, we need to start with datatype, then variable name then assign a value to it
         // dataType variableName = value;
         String myName = "Usman";
         String address = "My name is Usman, and i Live at #$#$ hollybrooke";
@@ -24,7 +34,7 @@ public class Main {
 
         /* We have two different types of data type ( Primitive, Non-Primitive)
         // Primitive data types - includes byte , short , int , long , float , double , boolean and char.
-        Non-primitive data types - String
+        Non-primitive data types - String and a lot more
         String name = "Usman"
         System.out.println("I love coding");
         */
@@ -35,6 +45,10 @@ public class Main {
 
         int age1 = 16, age2 = 18, age3 = 18;
         String name1 = "Ali", name2 = "Rover", name3 = "John";
+        age1 = 10;
+        age1 = 19;
+
+        System.out.println(age1);
 
 
         int num = 234;
@@ -66,6 +80,7 @@ public class Main {
         boolean abcdd = true;
         boolean isFalse = false;
         boolean fdsf = false;
+
 
         System.out.println(isTrue);
         System.out.println(isFalse);
@@ -368,7 +383,7 @@ public class Main {
         } while (us == 8);
 
         // for loop
-        for (int z = 0; z < 10; z++) {
+        for (int z = 0; z < 10; z+=2) {
             System.out.println(z);
         }
 
@@ -443,16 +458,36 @@ public class Main {
         System.out.println(javaClass.myNumber);
 
 
+
         System.out.println(PracticeClass.multiplication);
 
 
-        TestClass testClass = new TestClass();
-        testClass.totalPayment();
-        testClass.getMessage();
+        MethodClassExample methodClass = new MethodClassExample();
+        methodClass.totalPayment();
+        methodClass.getMessage();
 
-        testClass.getCodingMessage();
-        System.out.println(testClass.getCodingMessage());
-        System.out.println(testClass.totalMortgagePayment());
+        String getCodeMessage = methodClass.getCodingMessage();
+        System.out.println(getCodeMessage);
+        System.out.println(methodClass.getCodingMessage());
+        System.out.println(methodClass.totalMortgagePayment());
+
+        System.out.println(methodClass.getCodingMessage());
+
+
+        int plusLastProfitTillToday = 100000;
+        int totalProfitTillToday = plusLastProfitTillToday + methodClass.getEveryDayNetProfit(45999, 3434, 456);
+        System.out.println(totalProfitTillToday);
+
+        methodClass.aboutYou("Urdu", "Blue", "Harrisburg");
+
+        methodClass.aboutYou("Java", "Black", "Bensalem");
+
+        methodClass.aboutYou("Python", "Green");
+        methodClass.aboutYou("Python", "Green", "Langhorne");
+        methodClass.aboutYou("Python", "Green");
+        methodClass.aboutYou(14, 7);
+        int netProf = methodClass.getEveryDayNetProfit(70,  100);
+        System.out.println(netProf);
 
 
 

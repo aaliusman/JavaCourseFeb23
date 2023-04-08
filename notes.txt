@@ -1,5 +1,26 @@
 
 Java OOP -OOP stands for Object-Oriented Programming
+- Inheritance, Polymorphism, Encapsulation, Abstraction
+
+Inheritance - In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+              subclass (child) - the class that inherits from another class
+              superclass (parent) - the class being inherited from
+              To inherit from a class, use the extends keyword.
+
+
+ Polymorphism - Has Overloading and overriding
+                Overlaoding - We have multiple methods with same name but different arguments/parameters
+
+                OverRiding - In Java, method overriding occurs when a subclass (child class) has the same method
+                as the parent class. In other words, method overriding occurs when a subclass provides a particular
+                implementation of a method declared by one of its parent classes
+                - Same method name in Parent and child class with same arguments/parameters but different body
+
+
+  Encapsulation - We have 4 different types of Access modifier in Java
+                1. Public, Private, Protected, default
+
 
 Inheritance.Inheritance lets programmers create new classes that share
 some of the attributes of existing classes.
