@@ -22,6 +22,19 @@ Inheritance - In Java, it is possible to inherit attributes and methods from one
                 1. Public, Private, Protected, default
 
 
-Inheritance.Inheritance lets programmers create new classes that share
-some of the attributes of existing classes.
-Using Inheritance lets us build on previous work without reinventing the wheel.
+  Abstraction - Another way to achieve abstraction in Java, is with interfaces.
+
+  Interface -  An interface is a completely "abstract class" that is used to group related methods with empty bodies:
+
+  Constructor - A constructor in Java is a special method that is used to initialize objects.
+  The constructor is called when an object of a class is created.
+  It can be used to set initial values for object attributes:
+
+  HashMap - In the ArrayList chapter, you learned that Arrays store items as an ordered collection,
+   and you have to access them with an index number (int type).
+   A HashMap however, store items in "key/value" pairs, and you can access them by an index of
+   another type (e.g. a String).
+
+   One object is used as a key (index) to another object (value). It can store different types: String keys and
+   Integer values, or the same type, like: String keys and String values:
+
